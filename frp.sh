@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /root/repo/rhtest
+cd /root/rhtest
 crontab -l |grep frp.sh || echo "0/5 * * * * /root/repo/rhtest/frp.sh ">>/var/spool/cron/root
 
 if ps -ef |grep -v frp.log &>/dev/null;then
