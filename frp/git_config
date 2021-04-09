@@ -1,0 +1,18 @@
+echo "# rhtest" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:rorz99/rhtest.git
+git push -u origin main
+
+git remote add origin git@github.com:rorz99/rhtest.git
+git branch -M main
+git push -u origin main
+
+git config --global user.name "bryan sun"
+git config --global user.email "hitsjt@gmail.com"
+
+git config -l
+
+/home/hekc/.gitcredentials /home/hekc/.gitconfig
